@@ -56,50 +56,67 @@
 			$scores = array(
 				array(
 					"name" => "Dekel Hext",
-					"score" => 61
+					"score" => 61,
+					"passed" => true
 				),
 				array(
 					"name" => "Guálter Soler",
-					"score" => 58
+					"score" => 58,
+					"passed" => true
 				),
 				array(
 					"name" => "Ramona Halvorsen",
-					"score" => 76
+					"score" => 76,
+					"passed" => true
 				),
 				array(
 					"name" => "Ryanne Ó Baoghill",
-					"score" => 23
+					"score" => 23,
+					"passed" => false
 				),
 				array(
 					"name" => "Adrien Reinders",
-					"score" => 65
+					"score" => 65,
+					"passed" => true
 				),
 				array(
 					"name" => "Joelle Ganza",
-					"score" => 61
+					"score" => 61,
+					"passed" => true
 				),
 				array(
 					"name" => "Breandán Baggi",
-					"score" => 30
+					"score" => 30,
+					"passed" => false
 				),
 				array(
 					"name" => "Wendy Vlašić",
-					"score" => 4
+					"score" => 4,
+					"passed" => false
 				),
 				array(
 					"name" => "Frans Marlowe",
-					"score" => 61
+					"score" => 61,
+					"passed" => true
 				),
 				array(
 					"name" => "Alaois Opeyemi",
-					"score" => 97
+					"score" => 97,
+					"passed" => true
 				)
 			);
 		?>
 		<h2>The total number of people are <?= count($scores); ?></h2>
 		<ul>
 			<?php foreach ($scores as $person): ?>
-				<li><?= $person["name"]; ?> got <?= $person["score"]; ?></li>
+				<?php
+					if($person["passed"]){
+						$passed = "passed";
+					} else {
+						$passed = "failed";
+					}
+				?>
+				<li><?= $person["name"]." <b>".$passed."</b> with ".$person["score"]; ?></li>
 			<?php endforeach; ?>
 		</ul>
 		<?php
@@ -114,9 +131,9 @@
 		<h3>The average score is <?= $averageScore ?></h3>
 
 		<?php if($averageScore > 50): ?>
-			<p>The class has passed</p>
+			<p>Overall, the class has passed</p>
 		<?php else: ?>
-			<p>The class has failed</p>
+			<p>Overall, the class has failed</p>
 		<?php endif; ?>
 	</body>
 </html>
