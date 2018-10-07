@@ -55,32 +55,44 @@
 		<?php
 			$scores = array(
 				array(
-					"name" => "Billy Bob",
-					"score" => 0
+					"name" => "Dekel Hext",
+					"score" => 61
 				),
 				array(
-					"name" => "Jim John",
+					"name" => "Guálter Soler",
 					"score" => 58
 				),
 				array(
-					"name" => "Mary Sue",
-					"score" => 15
+					"name" => "Ramona Halvorsen",
+					"score" => 76
 				),
 				array(
-					"name" => "Jack Bay",
-					"score" => 89
+					"name" => "Ryanne Ó Baoghill",
+					"score" => 23
 				),
 				array(
-					"name" => "Hilly Billy",
-					"score" => 100
+					"name" => "Adrien Reinders",
+					"score" => 65
 				),
 				array(
-					"name" => "Grim Reaper",
-					"score" => 45
+					"name" => "Joelle Ganza",
+					"score" => 61
 				),
 				array(
-					"name" => "Carrot Cray",
-					"score" => 54
+					"name" => "Breandán Baggi",
+					"score" => 30
+				),
+				array(
+					"name" => "Wendy Vlašić",
+					"score" => 4
+				),
+				array(
+					"name" => "Frans Marlowe",
+					"score" => 61
+				),
+				array(
+					"name" => "Alaois Opeyemi",
+					"score" => 97
 				)
 			);
 		?>
