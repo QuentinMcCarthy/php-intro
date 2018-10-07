@@ -3,14 +3,14 @@
 	# Line Comment
 	/* Block Comment */
 
-	/*
-	$string = "This is a variable";
-	$String = "Variables are case-sensitive";
-	$_string = "Variables must start with a letter or underscore";
-	$number = 10;
-	$boolean = false;
-	$array = array(1, true, "three");
 
+	// $string = "This is a variable";
+	$String = "Variables are case-sensitive";
+	// $_string = "Variables must start with a letter or underscore";
+	// $number = 10;
+	// $boolean = false;
+	// $array = array(1, true, "three");
+	/*
 	echo "Echo inserts basic text into HTML. ";
 	echo("There are two ways to type the syntax. ");
 	echo $string;
@@ -98,15 +98,15 @@
 		?>
 		<h2>The total number of people are <?= count($scores); ?></h2>
 		<ul>
-			<?php foreach ($scores as $item): ?>
-				<li><?= $item["name"]; ?> got <?= $item["score"]; ?></li>
+			<?php foreach ($scores as $person): ?>
+				<li><?= $person["name"]; ?> got <?= $person["score"]; ?></li>
 			<?php endforeach; ?>
 		</ul>
 		<?php
 			$totalScore = 0;
 
-			foreach ($scores as $item){
-				$totalScore += $item["score"];
+			foreach ($scores as $person){
+				$totalScore += $person["score"];
 			}
 
 			$averageScore = $totalScore / count($scores);
