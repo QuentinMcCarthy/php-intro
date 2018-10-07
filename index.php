@@ -53,19 +53,48 @@
 		</ul>
 
 		<?php
-			$scores = array(0,58,15,89,100,45,54);
+			$scores = array(
+				array(
+					"name" => "Billy Bob",
+					"score" => 0
+				),
+				array(
+					"name" => "Jim John",
+					"score" => 58
+				),
+				array(
+					"name" => "Mary Sue",
+					"score" => 15
+				),
+				array(
+					"name" => "Jack Bay",
+					"score" => 89
+				),
+				array(
+					"name" => "Hilly Billy",
+					"score" => 100
+				),
+				array(
+					"name" => "Grim Reaper",
+					"score" => 45
+				),
+				array(
+					"name" => "Carrot Cray",
+					"score" => 54
+				)
+			);
 		?>
 		<h2>The total number of people are <?= count($scores); ?></h2>
 		<ul>
-			<?php foreach ($scores as $score): ?>
-			<li>This person got <?= $score; ?></li>
+			<?php foreach ($scores as $item): ?>
+				<li><?= $item["name"]; ?> got <?= $item["score"]; ?></li>
 			<?php endforeach; ?>
 		</ul>
 		<?php
 			$totalScore = 0;
 
-			foreach ($scores as $score){
-				$totalScore += $score;
+			foreach ($scores as $item){
+				$totalScore += $item["score"];
 			}
 
 			$averageScore = $totalScore / count($scores);
