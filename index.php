@@ -56,53 +56,43 @@
 			$scores = array(
 				array(
 					"name" => "Dekel Hext",
-					"score" => 61,
-					"passed" => true
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Guálter Soler",
-					"score" => 58,
-					"passed" => true
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Ramona Halvorsen",
-					"score" => 76,
-					"passed" => true
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Ryanne Ó Baoghill",
-					"score" => 23,
-					"passed" => false
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Adrien Reinders",
-					"score" => 65,
-					"passed" => true
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Joelle Ganza",
-					"score" => 61,
-					"passed" => true
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Breandán Baggi",
-					"score" => 30,
-					"passed" => false
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Wendy Vlašić",
-					"score" => 4,
-					"passed" => false
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Frans Marlowe",
-					"score" => 61,
-					"passed" => true
+					"score" => rand(0,100)
 				),
 				array(
 					"name" => "Alaois Opeyemi",
-					"score" => 97,
-					"passed" => true
+					"score" => rand(0,100)
 				)
 			);
 		?>
@@ -110,7 +100,7 @@
 		<ul>
 			<?php foreach ($scores as $person): ?>
 				<?php
-					if($person["passed"]){
+					if($person["score"] > 50){
 						$passed = "passed";
 					} else {
 						$passed = "failed";
